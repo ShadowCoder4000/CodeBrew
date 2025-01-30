@@ -142,7 +142,7 @@ nav a:hover, nav a.active {
 .card { 
     width: 380px;
     height: 450px;
-    background: url(/images/Brown-Bg.png) no-repeat center/cover;
+    background: url(images/Brown-Bg.png) no-repeat center/cover;
     border-top-left-radius: 45%;
     border-top-right-radius: 45%;
     cursor: pointer;
@@ -183,7 +183,7 @@ nav a:hover, nav a.active {
 .card1 { 
     width: 380px;
     height: 450px;
-    background: url(/images/Brown-Bg.png) no-repeat center/cover;
+    background: url(images/Brown-Bg.png) no-repeat center/cover;
     border-top-left-radius: 45%;
     border-top-right-radius: 45%;
     cursor: pointer;
@@ -223,7 +223,7 @@ nav a:hover, nav a.active {
 .card2 { 
     width: 380px;
     height: 450px;
-    background: url(/images/Brown-Bg.png) no-repeat center/cover;
+    background: url(images/Brown-Bg.png) no-repeat center/cover;
     border-top-left-radius: 45%;
     border-top-right-radius: 45%;
     cursor: pointer;
