@@ -1,0 +1,303 @@
+ /* General Reset */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Radley';
+    background-color: #f4e3d6;
+
+}
+
+.Line { 
+    position: absolute;
+    top: 70px;
+    left: 19%;
+    width: 81%;
+    z-index: -100;
+}
+
+.Line2 { 
+    position: absolute;
+    top: 60%;
+    left: 19%;
+    width: 70%;
+    z-index: -100;
+}
+
+.RLine { 
+    position: absolute;
+    left: -10px;
+    width: 20%;
+    height: 100%;
+    z-index: -100;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    font-family: 'Radley';
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    top: 100px;
+}
+
+.menu-buttons {
+    list-style: none;
+}
+
+.menu-buttons li {
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-buttons button {
+    background-color: transparent;
+    color: rgb(143, 75, 29);
+    border: none;
+    font-size: 30px;
+    gap: 5px;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.menu-buttons button:hover {
+    color: #c49b77;
+}
+
+.menu-buttons .arrow {
+    margin-left: 10px;
+    color: transparent;
+    transition: color 0.3s;
+}
+
+.menu-buttons .arrow {
+    overflow: hidden;
+    margin-left: -25px; 
+    font-size: xx-large;
+}
+
+.menu-buttons .active .arrow {
+    color: #b38868;
+}
+
+.contact-info {
+    position: absolute;
+    text-align: center;
+    top: 78%;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Back Arrow */
+.back-arrow {
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    left: -24%;
+    color: #804f3b;
+    font-size: 75px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    transition: ease-in 0.2s;
+}
+
+.back-arrow:hover { 
+    color: burlywood;
+}
+
+/* Main Content */
+.main-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+}
+
+.menu-header {
+    color: #804f3b;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Milktea */
+
+.product-grid {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    top: 10%;
+    left: -20px;
+    width: 70%;
+}
+
+.product {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.product img {
+    background-size: auto;
+    width: 60%;
+}
+
+.product-image {
+    background: transparent;
+    position: absolute;
+    top: 92px;
+    left: 111px;
+    width: 20%; /* Adjust width */
+    height: 20%;
+}
+
+/*Cuztomization */ 
+
+.customization {
+    position: relative;
+    color: #804f3b;
+    top: 55%;
+    width: 50px;
+    border-radius: 8px;
+}
+
+.customization h3 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.customization-row {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    gap: 5px; /* Adjust the gap here for spacing between sections */
+    justify-content: space-between; /* Ensure equal spacing between items */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.add-ons, .sugar-level, .size {
+    flex: 1; /* Allow sections to take up equal space */
+    min-width: 200px; /* Set a minimum width to prevent collapsing */
+}
+
+.add-ons h4, .sugar-level h4, .size h4 {
+    margin-bottom: 10px;
+}
+
+.add-ons label, .sugar-level label, .size label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Summary */
+.summary {
+    background-image: url(images/Bg-brown-2.png);
+    background-repeat: no-repeat;
+    background-size: 80% 85%;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    height: 95%;  /* Maintain height */
+    position: absolute;
+    top: 14%;
+    right: 20px;
+    box-sizing: border-box;  /* Ensure padding doesn't affect width */
+    flex-direction: column;  /* Arrange items vertically */
+    justify-content: space-between; /* Space between content (top and bottom) */
+}
+/* Paragraph styling inside summary */
+.summary p {
+    position: relative;
+    top: 40%;
+    color: #e6ccb2;
+    line-height: 2;
+}
+
+.add-to-order, .Checkout {
+    margin-top: 12px;  /* Adjust the margin to provide spacing between buttons */
+    padding: 12px;
+    color: #e6ccb2;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    position: relative;  /* Position relative to their normal location */
+    top: 40%;  /* Adjust the position from the top */
+}
+.add-to-order:hover, .Checkout:hover {
+    background-color: #b38868;
+}
+
+/* Adjust add-ons section */
+.add-ons {
+    margin-bottom: 20px;  /* Spacing between add-ons and the next section */
+}
+
+.add-ons input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Make sure other text elements align well */
+.summary .add-ons, .summary .size, .summary .sugar-level {
+    margin-bottom: 10px;
+}
+
+/* Center text and buttons at the bottom */
+.summary .add-to-order, .summary .Checkout {
+    align-self: center;
+}
+
+/* footer */
+
+footer { 
+    color: #804f3b;
+    text-align: center;
+    font-size: 10px;
+    flex-wrap: wrap; /* Allow the header to wrap on smaller screens */
+    position: absolute;
+    top:  75%;
+    left: -29%;
+    z-index: -2;
+}
+
+.F-Container {
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.F-Container .Contact {
+    font-size: large;
+}
+
+.F-Container img { 
+    width: 4%;
+    margin-left: 10px;
+}

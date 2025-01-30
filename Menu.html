@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Radley' rel='stylesheet'>
+    <title>Menu</title>
+    <link rel="stylesheet" href="Menu.css">
+    <link rel="icon" type="image/x-icon" href="/images/Tab.png">
+    <script src="Menu.js"></script>
+</head>
+<body>
+    <img src="images/C-Line.png" alt="" class="Line">
+    <img src="images/C-Line.png" alt="" class="Line2">
+    <img src="images/Border-Brown.png" alt="" class="RLine">
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul class="menu-buttons">
+                <!-- Navigation Buttons -->
+                <li class="active"><span class="arrow">▶</span><button onclick="showMenu('milkTea', this)">MILKTEA</button></li>
+                <li><span class="arrow">▶</span><button onclick="showMenu('hotDrinks', this)">HOT DRINKS</button></li>
+                <li><span class="arrow">▶</span><button onclick="showMenu('frappe', this)">FRAPPE</button></li>
+                <li><span class="arrow">▶</span><button onclick="showMenu('fruitTea', this)">FRUIT TEA</button></li>
+                <li><span class="arrow">▶</span><button onclick="showMenu('icedCoffee', this)">ICED COFFEE</button></li>
+            </ul>
+        </div>
+    
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <a class="back-arrow" href="index.html">◀</a>
+            <div class="menu-header">MENU</div>
+
+            <!-- Product Grid -->
+            <div id="productGrid" class="product-grid">
+                <!-- Milk Tea Example -->
+                <div class="product" onclick="selectProduct('Mango', 50)">
+                    <img src="images/Mango.png" alt="Product Image Placeholder" /> <!-- Image Placeholder -->
+                    <h4>Mango</h4>
+                </div>
+                <div class="product" onclick="selectProduct('Vanilla', 45)">
+                    <img src="images/Vanilla.png" alt="Product Image Placeholder"  /> <!-- Image Placeholder -->
+                    <h4>Vanilla</h4>
+                </div>
+                <div class="product" onclick="selectProduct('Matcha', 55)">
+                    <img src="images/Matcha.png" alt="Product Image Placeholder" /> <!-- Image Placeholder -->
+                    <h4>Matcha</h4>
+                </div>
+                <div class="product" onclick="selectProduct('Coffee Jelly', 60)">
+                    <img src="images/Coffee-Jelly.png" alt="Product Image Placeholder" /> <!-- Image Placeholder -->
+                    <h4>Coffee Jelly</h4>
+                </div>
+                <div class="product" onclick="selectProduct('Strawberry', 50)">
+                    <img src="images/Strawberry.png" alt="Product Image Placeholder" /> <!-- Image Placeholder -->
+                    <h4>Strawberry</h4>
+                </div>
+            </div>
+
+            <!-- Summary Section -->
+            <div class="customization">
+                <div class="customization-row">
+                    <div class="add-ons">
+                        <h4>Add-ons (5.00)</h4>
+                        <label><input type="checkbox" id="blackPearl"> Black Pearl</label>
+                        <label><input type="checkbox" id="crystal"> Crystal</label>
+                        <label><input type="checkbox" id="creamCheese"> Cream Cheese</label>
+                        <label><input type="checkbox" id="crushedOreo"> Crushed Oreo</label>
+                        <label><input type="checkbox" id="creamPuff"> Cream Puff</label>
+                        <label><input type="checkbox" id="cheeseCake"> Cheese Cake</label>
+                    </div>
+
+                    <div class="sugar-level">
+                        <h4>Sugar Level</h4>
+                        <label><input type="radio" name="sugar" value="0%" id="sugar0"> 0%</label>
+                        <label><input type="radio" name="sugar" value="25%" id="sugar25"> 25%</label>
+                        <label><input type="radio" name="sugar" value="50%" id="sugar50"> 50%</label>
+                        <label><input type="radio" name="sugar" value="75%" id="sugar75"> 75%</label>
+                        <label><input type="radio" name="sugar" value="100%" id="sugar100" checked> 100%</label>
+                    </div>
+                    
+                    <div class="size">
+                        <h4>Size</h4>
+                        <label><input type="radio" name="Size" value="Small" id="smallSize"> Small</label>
+                        <label><input type="radio" name="Size" value="Medium" checked id="mediumSize"> Medium</label>
+                        <label><input type="radio" name="Size" value="Large" id="largeSize"> Large</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="summary">
+                <img id="productImage" src="" class="product-image">
+                <p>Name: <span id="productName"></span></p>
+                <p>Size: <span id="selectedSize">Medium</span></p>
+                <p>Sugar Level: <span id="selectedSugar">100%</span></p>
+                <p>Add-ons: <span id="selectedAddOns">None</span></p>
+                <p>Price: <span id="selectedPrice">₱0.00</span></p>
+                <button class="add-to-order" onclick="addToCart()">Add to Cart</button>
+                <button class="Checkout">PROCEED TO CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="F-Container">
+        <p class="Contact">CONTACT US
+        <br>FOR MORE INQUIRIES</p> 
+        <img src="images/Facebook.png">
+        <img src="images/Gmail.png">
+        <img src="images/Instagram.png">
+        <p class="Copyright">COPYRIGHT     
+            <br>•     2025     •     Code Brew     •     
+            <br>All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

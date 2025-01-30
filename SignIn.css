@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ede0d4 92%, #e6ccb2 70%);
+    color: #5c4033;
+}
+
+.footimg { 
+    display: flex;
+    position: absolute;
+    top: 97%;
+    width: 100%;
+    z-index: -1;
+}
+
+.bgimg { 
+    position: relative;
+    left: 200px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #cfa07a, #a96540);
+    width: 30%;
+    height: 70%;
+    padding: 30px;
+    border-radius: 90px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.logo-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -30%;
+    left: -35%;
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.logo-section img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.logo-section .title {
+    font-family: 'Radley';
+    text-decoration: underline;
+    font-size: 24px;
+    position: relative;
+    left: 115%;
+    top: -75px;
+    display: flex;
+}
+
+.logo-section .subtitle {
+    font-size: 14px;
+    left: 100%;
+    top: -60px;
+    color: #070707;
+    display: flex;
+    position: relative;
+}
+
+.form-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    color: #fff;
+}
+
+.form-section h2 {
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    font-size: 28px;
+    margin-bottom: 5px;
+    top: -45%;
+}
+
+.form-section p {
+    font-family: 'Radley';
+    position: absolute;
+    font-size: 14px;
+    top: -50px;
+}
+
+.button-group {
+    position: relative;
+    display: flex;
+    top: -20px;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+
+
+.button-group a {
+    font-family: 'Radley';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 50px;
+    color: #5c4033;
+    background-color: transparent;
+    border: #070707 solid 1px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.line {
+    position: relative;
+    top: -20px;
+    border-bottom: 5px solid rgb(0, 0, 0);
+    margin-top: 10px;
+    width: 100%;
+}
+
+.form-section input {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    background-color: transparent;
+    text-transform: capitalize;
+    border: black solid 1px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-section input::placeholder { 
+    color: white;
+}
+
+.form-section .signin-button {
+    font-family: 'Radley';
+    position: relative;
+    top: 30px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: #a96540;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-section .signin-button:hover {
+    background-color: #864f35;
+}
+
+.form-section a {
+    font-family: 'Radley';
+    color: #ffe6d5;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.form-section .Create { 
+    font-family: 'Radley';
+    position: relative;
+    top: 55px;
+    left: 80px;
+}
+
+.form-section a:hover {
+    text-decoration: underline;
+}
+
+footer { 
+    display: flex;
+}
+
+footer p { 
+    font-family: 'Radley';
+    position: absolute;
+    color: #7777774f;
+    top: 90%;
+    left: 58%;
+}

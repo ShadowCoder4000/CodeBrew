@@ -1,0 +1,292 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Radley';
+    background-color: #ede0d4;
+}
+
+header {
+    position: relative;
+    font-family: 'Radley';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background-color: #ede0d4;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo span { 
+    font-family: 'Radley';
+    font-size: xx-large;
+    color: #5e3b23;
+}
+
+nav {
+    display: flex;
+    gap: 70px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5e3b23;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a:hover, nav a.active {
+    color: #a75d38;
+    cursor: pointer;
+}
+
+.login {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: -10px;
+    align-items: center;
+    margin-right: 120px;
+}
+
+.login button {
+    background-color: #ede0d4;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #dba589;
+    cursor: pointer;
+}
+
+.Start { 
+    position: absolute;
+    color: #8d614e;
+    font-family: 'Agbalumo';
+    font-size: 40px;
+    left: 45%;
+    top: 65px;
+    text-shadow: #523a30 5px 3px 3px;
+}
+
+.bg-img { 
+    display: flex;
+    position: absolute;
+    width: 125%;
+    left: -12%;
+    top: 175px;
+    z-index: -1;
+}
+
+/* Curve */
+.svg { 
+    font-family: 'Agbalumo';
+    position: absolute;
+    left: 75px;
+    top: 32%;
+}
+
+#curve{
+    fill: transparent;
+}
+
+.text { 
+    font-family: 'Agbalumo';
+     font-size: 40px;
+     fill: #804f3b;
+     text-shadow: white 0px 5px 0px;
+}
+
+.svg1{ 
+    font-family: 'Agbalumo';
+    position: absolute;
+    left: 640px;
+    top: 31%;
+}
+
+#curve1{
+    fill: transparent;
+}
+
+
+.svg2{ 
+    font-family: 'Agbalumo';
+    position: absolute;
+    left: 1155px;
+    top: 32%;
+}
+
+#curve2{
+    fill: transparent;
+}
+
+
+/* card styles */
+.card { 
+    width: 380px;
+    height: 450px;
+    background: url(/images/Brown-Bg.png) no-repeat center/cover;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    top: 173px;
+    left: 45px;
+}
+
+
+/* card content styles */
+
+.card-content { 
+    width: 100%;
+    height: 80%;
+    background-color: #bd826a;
+    position: absolute;
+    top: 100%;
+    border-radius: inherit;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+    color: wheat;
+    transition: top 1s ease;
+}
+
+/* hover */
+.card:hover .card-content { 
+    top: 15%;
+}
+
+/* card 1 */
+/* card styles */
+.card1 { 
+    width: 380px;
+    height: 450px;
+    background: url(/images/Brown-Bg.png) no-repeat center/cover;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    top: -277px;
+    left: 600px;
+}
+
+
+/* card content styles */
+
+.card-content1 { 
+    width: 100%;
+    height: 80%;
+    background-color: #bd826a;
+    position: absolute;
+    top: 100%;
+    border-radius: inherit;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+    color: wheat;
+    transition: top 1s ease;
+}
+
+/* hover */
+.card1:hover .card-content1 { 
+    top: 15%;
+}
+
+/* Card 2 */
+.card2 { 
+    width: 380px;
+    height: 450px;
+    background: url(/images/Brown-Bg.png) no-repeat center/cover;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    top: -725px;
+    left: 1165px;
+}
+
+
+/* card content styles */
+
+.card-content2 { 
+    width: 100%;
+    height: 80%;
+    background-color: #bd826a;
+    position: absolute;
+    top: 100%;
+    border-radius: inherit;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+    color: wheat;
+    transition: top 1s ease;
+}
+
+/* hover */
+.card2:hover .card-content2 { 
+    top: 15%;
+}
+
+/* footer */
+
+footer { 
+    color: #804f3b;
+    padding: 12%;
+    text-align: center;
+    font-size: 10px;
+    flex-wrap: wrap; /* Allow the header to wrap on smaller screens */
+    position: absolute;
+    top: 69%;
+}
+
+.F-Container {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: #804f3b;
+    transition: all 0.2s;
+}
+
+footer a:hover { 
+    color: blue;
+}
