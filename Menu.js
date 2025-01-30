@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.Checkout').addEventListener('click', function () {
         // Assuming you want to store selected product in localStorage
         localStorage.setItem('selectedProduct', JSON.stringify(selectedProduct));
-        window.location.href = 'addtoCart.html';  // Redirect to addtocart.html
+        window.location.href = 'addtocart.html';  // Redirect to addtocart.html
     });
 });
 
